@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Report di Sostenibilità – Atlantica Digital SPA</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                color: #2c3e50;
+                background: #ffffff;
+            }
+            .container {
+                width: 90%;
+                max-width: 1000px;
+                margin: auto;
+            }
+            header {
+                background: #ffffff;
+                color: #2c3e50;
+                padding: 1rem 0;
+                border-bottom: 2px solid #e0e0e0;
+            }
+            header h1 {
+                text-align: center;
+                font-size: 2rem;
+                color: #0055A5;
+            }
+            nav ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+            }
+            nav a {
+                color: #377FBA;
+                text-decoration: none;
+                font-weight: 600;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            .section {
+                padding: 2rem 0;
+            }
+            h2 {
+                color: #0055A5;
+                margin-bottom: 1rem;
+                font-size: 1.75rem;
+            }
+            .report-list {
+                list-style: none;
+                display: grid;
+                gap: 1rem;
+            }
+            .report-list li {
+                background: #f9f9f9;
+                border-left: 5px solid #0055A5;
+                padding: 1rem;
+                border-radius: 4px;
+            }
+            .report-list a {
+                color: #0055A5;
+                font-weight: 600;
+                text-decoration: none;
+            }
+            .report-list a:hover {
+                text-decoration: underline;
+            }
+            footer {
+                background: #222222;
+                color: #ffffff;
+                text-align: center;
+                padding: 1rem 0;
+                margin-top: 2rem;
+            }
+            footer a {
+                color: #aad4dd;
+                text-decoration: underline;
+            }
+            @media (max-width: 600px) {
+                nav ul {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Atlantica Digital SPA</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#intro">Sostenibilità</a></li>
+                        <li><a href="#report">Report CSR</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="intro" class="section">
+                <div class="container">
+                    <h2>Il nostro impegno per la sostenibilità</h2>
+                    <p>
+                        Atlantica Digital SPA si impegna a promuovere la
+                        sostenibilità ambientale, sociale ed economica
+                        attraverso innovazione, responsabilità e trasparenza.
+                    </p>
+                </div>
+            </section>
+
+            <section id="report" class="section">
+                <div class="container">
+                    <h2>Download Report di Sostenibilità</h2>
+                    <ul class="report-list">
+                        <li>
+                            <h3>Report di Sostenibilità 2023</h3>
+                            <p>
+                                Obiettivi ambientali e sociali raggiunti nel
+                                2023.
+                            </p>
+                            <a href="report/report-2023.pdf" download>Scarica PDF</a>
+                        </li>
+                        <li>
+                            <h3>Report di Sostenibilità 2022</h3>
+                            <p>
+                                Risultati delle iniziative sostenibili del 2022.
+                            </p>
+                            <a href="report/report-2022.pdf" download>Scarica PDF</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contatti">
+            <div class="container">
+                <p>
+                    &copy; 2025 Atlantica Digital SPA — <a href="mailto:info@atlantica.it">info@atlantica.it</a>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
