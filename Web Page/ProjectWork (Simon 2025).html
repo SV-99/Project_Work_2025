@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+        <title>Report di Sostenibilità – COIM GROUP SPA</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                color: #2c3e50;
+                background: #f4f5f6;
+            }
+            .container {
+                width: 90%;
+                max-width: 1000px;
+                margin: auto;
+            }
+            header {
+                background: #ffffff;
+                color: #2c3e50;
+                padding: 1rem 0;
+            }
+            header h1 {
+                text-align: center;
+                font-size: 2rem;
+                color: #1f2933;
+            }
+			
+			.navbar-container {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0.5rem 1rem;
+				background-color: #ffffff;
+			}
+
+			.navbar-brand {
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				color: #0055A5;
+				font-weight: bold;
+				font-size: 1.25rem;
+			}
+
+			.navbar-brand img {
+				height: 50px;
+				margin-right: 0.5rem;
+			}
+
+			.navbar-toggle {
+				display: none;
+				font-size: 1.5rem;
+				background: none;
+				border: none;
+				cursor: pointer;
+				color: #0055A5;
+			}
+
+			.navbar-menu ul {
+				list-style: none;
+				display: flex;
+				gap: 2rem;
+				margin: 0;
+				padding: 0;
+			}
+
+			.navbar-menu a {
+				text-decoration: none;
+				color: #5c5c5c;
+				font-weight: 600;
+			}
+
+			.navbar-menu a:hover {
+				text-decoration: underline;
+			}
+
+			/* Responsive */
+			@media (max-width: 768px) {
+				.navbar-toggle {
+					display: block;
+					margin: 10px !important;
+				}
+
+				.navbar-menu {
+					display: none;
+					width: 100%;
+					margin-top: 0.5rem;
+				}
+
+				.navbar-menu ul {
+					flex-direction: column;
+					gap: 1rem;
+				}
+
+				.navbar-menu.active {
+					display: block;
+				}
+			}
+			
+            .section {
+                padding: 2rem 0;
+            }
+            h2 {
+                color: #00aeef;
+                margin-bottom: 1rem;
+                font-size: 1.75rem;
+				font-weight: 200;
+            }
+            .report-list {
+                list-style: none;
+                display: grid;
+                gap: 1rem;
+            }
+            .report-list li {
+                background: #e1e1e1;
+                border-left: 5px solid #1f2933;
+                padding: 1rem;
+                border-radius: 4px;
+            }
+            .report-list a {
+                color: #1f2933;
+                font-weight: 600;
+                text-decoration: none;
+				padding: 0.5rem 1rem;
+			    border-radius: 4px;
+            }
+			.report-list a:hover {
+                text-decoration: underline;
+            }
+            footer {
+                background: #1f2933;
+                color: #ffffff;
+                text-align: center;
+                padding: 1rem 0;
+                margin-top: 2rem;
+            }
+            footer a {
+                color: #aad4dd;
+                text-decoration: underline;
+            }
+            @media (max-width: 600px) {
+                nav ul {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+			<div class="navbar-container">
+				<a href="https://www.coimgroup.com/" class="navbar-brand">
+					<img src="img/logo.png" alt="Logo COIM S.p.A.">
+				</a>
+				<button class="navbar-toggle" id="navbarToggle">
+					&#9776; <!-- Hamburger icon -->
+				</button>
+				<nav class="navbar-menu" id="navbarMenu">
+					<ul>
+						<li><a href="#intro">Sostenibilità</a></li>
+						<li><a href="#report">Report CSR</a></li>
+						<li><a href="#contatti">Contatti</a></li>
+					</ul>
+				</nav>
+			</div>
+        </header>
+
+        <main>
+            <section id="intro" class="section">
+                <div class="container">
+                    <h2>Il nostro impegno per la sostenibilità</h2>
+                    <p>
+                       COIM S.p.A. si impegna a promuovere la sostenibilità ambientale, economica e sociale 
+					   attraverso l’innovazione dei processi produttivi, la responsabilità nella gestione delle risorse 
+					   e la trasparenza nella rendicontazione delle proprie attività.
+                    </p>
+                </div>
+            </section>
+
+            <section id="report" class="section">
+                <div class="container">
+                    <h2>Download Report di Sostenibilità</h2>
+                    <ul class="report-list">
+                        <li>
+                            <h3>Report di Sostenibilità 2024</h3>
+                            <p>
+                                Obiettivi ambientali e sociali raggiunti nel 2024.
+                            </p>
+                            <a href="report/CS Report sostenibilità COIM GROUP 2024.pdf" target="_blank">Scarica PDF</a>
+                        </li>
+                        <li>
+                            <h3>Report di Sostenibilità biennio 2022-2023</h3>
+                            <p>
+                                Risultati delle iniziative sostenibili del 2022-2023.
+                            </p>
+                            <a href="report/CS Report sostenibilità COIM GROUP 2022-23.pdf" target="_blank">Scarica PDF</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contatti">
+            <div class="container">
+				<p>
+				  &copy; 2025 COIM S.p.A. — <a href="mailto:info@coimgroup.com">info@coimgroup.com</a>
+				</p>
+            </div>
+        </footer>
+    </body>
+	
+	<script>
+		const toggleButton = document.getElementById('navbarToggle');
+		const menu = document.getElementById('navbarMenu');
+
+		toggleButton.addEventListener('click', () => {
+			menu.classList.toggle('active');
+		});
+	</script>
+</html>
